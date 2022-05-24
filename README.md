@@ -57,12 +57,7 @@
                 console.log(`Server is running on port ${port}`);
             });
             ```
-        - configurer le serveur pour utiliser un fichier `data.json` en ajoutant le code suivant :
-            ```javascript
-            // use data file
-            const data = require('./data.json');
-            ```
-        - puis ajouter un fichier data.json à la racine de `server` avec les datas suivantes :
+        - ajouter un fichier data.json à la racine de `server` avec les datas suivantes :
             ```json
             [
                 {
