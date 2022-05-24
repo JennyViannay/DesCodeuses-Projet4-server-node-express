@@ -81,7 +81,7 @@
 
 ### Exercice :
 
-A partir de ce qui a été fait ce matin, créer un serveur Express/NodeJs puis faites en sorte que le serveur propose les actions suivantes sur la ressources *article*:
+A partir de ce qui a été fait ce matin, créer un serveur Express/NodeJs puis faites en sorte que le serveur propose les actions suivantes sur la ressource *article*:
 - GET ALL : répond à l'URL `/api/articles` et qui retourne un JSON contenant tous les articles du fichier `data.json`
 - GET ONE : répond à l'URL `/api/articles/:id` et qui retourne un JSON contenant l'article correspondant à l'id passé en paramètre
 - POST : répond à l'URL `/api/articles` et qui ajoute un nouvel article à `data.json` 
