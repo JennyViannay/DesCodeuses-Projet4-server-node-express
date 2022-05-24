@@ -17,7 +17,12 @@
 
 > Etape 3
 - Dans le fichier `package.json` :
-    - ajouter le script `start` qui exécute le serveur avec `nodemon server.js`
+    - ajouter le script `start` qui exécute le serveur avec `nodemon server.js` : 
+        ```json
+        "scripts": {
+            "start": "nodemon server.js"
+        }
+        ```
   
 > Etape 4
 - Dans le dossier `server` :
