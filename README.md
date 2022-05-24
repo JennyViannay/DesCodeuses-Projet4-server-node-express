@@ -20,7 +20,7 @@
     - ajouter le script `start` qui exécute le serveur avec `nodemon server.js` : 
         ```json
         "scripts": {
-            "start": "nodemon server.js"
+            "start": "nodemon index.js"
         }
         ```
   
