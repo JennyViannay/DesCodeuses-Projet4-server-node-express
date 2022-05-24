@@ -10,10 +10,10 @@
 
 > Etape 2
 - Depuis le terminal :
-    - se déplacer à la racine du dossier `server` puis exécuter la commande `npm init` pour initialiser un projet NodeJS [npm](https://www.npmjs.com/), cette commande va créer un fichier `package.json` à la racine de `server`.
+    - se déplacer à la racine du dossier `server` puis exécuter la commande `npm init` pour initialiser un projet NodeJS avec [npm](https://www.npmjs.com/), cette commande va créer un fichier `package.json` à la racine de `server`.
     - installer les dépendances nécessaires à l'exécution du serveur : `npm install express nodemon --save`
-        - Express : [express](https://expressjs.com/)
-        - Nodemon : [nodemon](https://www.npmjs.com/package/nodemon)
+        - Express documentation : [express](https://expressjs.com/)
+        - Nodemon documentation : [nodemon](https://www.npmjs.com/package/nodemon)
 
 > Etape 3
 - Dans le fichier `package.json` :
