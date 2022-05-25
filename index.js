@@ -1,6 +1,9 @@
 // use micro framework express
 const express = require('express');
 
+// use axios
+const axios = require('axios');
+
 // use a data file
 const data = require('./data.json');
 
@@ -18,6 +21,26 @@ app.use(express.urlencoded({
 // default entry point '/' 
 app.get('/', (req, res) => {
     res.json({ message : 'Welcome on Express/Node Server'}).status(200);
+});
+
+// get characters from rick and morty api
+app.get('/api/characters', async (req, res) => {
+    // try to get data from rick and morty api
+    try {
+        // fetch data from rick and morty api with axios and asynchrone method (await) then save response in a variable
+        const responseFromApi = await axios.get('https://rickandmortyapi.com/api/character/')
+        // send response data to client
+        res.json(responseFromApi.data.results).status(200);
+
+        // Is the second possibility to fetch data from rick and morty api with axios
+        //axios.get('https://rickandmortyapi.com/api/character/')
+        //.then(responseFromApi => res.send(responseFromApi.data.results).status(200))
+        
+    } 
+    // catch error if any
+    catch (error) {
+        console.log(error);
+    }
 });
 
 // CRUD (Create / Read / Update / Delete) for articles ressource
